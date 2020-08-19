@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <div id="message" style="display: none">
+            <h1 class="margin-bottom">eBay login successful. Redirecting back to Banksia...</h1>
+        </div>
+        
+        <script>
+            setTimeout(function () {
+                document.getElementById('message').style.display = 'block';
+            }, 25);
+        
+            window.location = 'ebayauth-callback://'+ window.location.href;
+        </script>
+        <hr />
+        
+    </body>
+</html>
